@@ -1,0 +1,16 @@
+:root {
+    --color-primary: #113D63;
+    --color-primary-rgb: 17, 61, 99;
+
+    --color-primary-light: #5D8EB8;
+    --color-primary-dark: #0D2F4D;
+
+    --color-secondary-olive: #5E6311;
+    --color-secondary-red: #631511;
+    --color-secondary-light: #DEE398;
+
+    --color-primary-light-rgb: 93, 142, 184;
+    --color-secondary-olive-rgb: 94, 99, 17;
+    --color-secondary-red-rgb: 99, 21, 17;
+    --color-secondary-light-rgb: 222, 227, 152;
+}
