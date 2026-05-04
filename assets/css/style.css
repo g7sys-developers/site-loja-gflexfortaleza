@@ -1,16 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-    --color-primary: #113D63;
-    --color-primary-rgb: 17, 61, 99;
+    --gflex-blue: #0e4267;
+    --gflex-blue-dark: #083451;
+    --gflex-yellow: #f7c942;
+    --gflex-red: #ed5a5a;
+    --gflex-green: #27b35b;
+    --gflex-text: #143c5a;
+    --gflex-muted: #6f7f8d;
+    --gflex-light: #f4f7fa;
+}
 
-    --color-primary-light: #5D8EB8;
-    --color-primary-dark: #0D2F4D;
+html {
+    scroll-behavior: smooth;
+}
 
-    --color-secondary-olive: #5E6311;
-    --color-secondary-red: #631511;
-    --color-secondary-light: #DEE398;
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: var(--gflex-text);
+    background: #fff;
+}
 
-    --color-primary-light-rgb: 93, 142, 184;
-    --color-secondary-olive-rgb: 94, 99, 17;
-    --color-secondary-red-rgb: 99, 21, 17;
-    --color-secondary-light-rgb: 222, 227, 152;
+h1,
+h2,
+h3,
+h4,
+.brand-title {
+    font-family: "Montserrat", Georgia, 'Times New Roman', serif;
+    font-weight: 800;
+    color: var(--gflex-blue);
+}
+
+.section-title {
+    font-size: clamp(1.85rem, 4vw, 2.55rem);
+    line-height: 1.05;
+}
+
+.text-gflex {
+    color: var(--gflex-blue) !important;
+}
+
+.text-gflex-yellow {
+    color: var(--gflex-yellow) !important;
+}
+
+.bg-gflex {
+    background-color: var(--gflex-blue) !important;
+}
+
+.bg-gflex-dark {
+    background-color: var(--gflex-blue-dark) !important;
+}
+
+.bg-gflex-light {
+    background-color: var(--gflex-light) !important;
+}
+
+.btn-gflex {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--gflex-green);
+    --bs-btn-border-color: var(--gflex-green);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #21984e;
+    --bs-btn-hover-border-color: #21984e;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+
+.hero {
+    min-height: clamp(420px, 58vw, 720px);
+    background:
+        linear-gradient(180deg, rgba(5, 28, 44, .12), rgba(5, 28, 44, .04)),
+        url('../../assets/image/topo-site-noite.png') center top / cover no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120vw;
+    height: 120px;
+    background: white;
+    border-radius: 50% 50% 0 0;
+
+}
+
+.text-vermelhor {
+    color: #DC4F48 !important;
+}
+
+.max-650 {
+    max-width: 650px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+
+.hero-actions {
+    position: absolute;
+    left: 50%;
+    bottom: clamp(22px, 5vw, 48px);
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.social-btn {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: .45rem;
+    box-shadow: 0 .35rem .8rem rgba(0, 0, 0, .18);
+}
+
+.instagram-gradient {
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+.whatsapp-float {
+    background: var(--gflex-green);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    box-shadow: 0 .35rem .8rem rgba(0, 0, 0, .18);
+}
+
+.map-float {
+    background: #e5262f;
+}
+
+.intro-card {
+    margin-top: -1px;
+    border-radius: 0 0 50% 50% / 0 0 5% 5%;
+}
+
+.brand-logo {
+    height: 58px;
+    max-width: 155px;
+    object-fit: contain;
+    filter: drop-shadow(0 3px 4px rgba(0, 0, 0, .08));
+}
+
+.product-card {
+    border: 0;
+    border-radius: .65rem;
+    background: #f3f4f5;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 .25rem .75rem rgba(8, 52, 81, .08);
+}
+
+.product-card figure {
+    min-height: 245px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.cta-mattress {
+    background-position: center center;
+    background-image: url('../../assets/image/fundo-cochao.png');
+    background-size: cover;
+}
+
+.faq-card {
+    border: 1.5px solid #45a2e8;
+    border-radius: .55rem;
+    background: #fff;
+    box-shadow: 0 .15rem .45rem rgba(14, 66, 103, .05);
+    height: 100%;
+}
+
+.faq-card .accordion-button {
+    color: var(--gflex-blue);
+    font-weight: 900;
+    line-height: 1.1;
+    padding: 1rem;
+    box-shadow: none;
+    background: #fff;
+    border-radius: .55rem !important;
+}
+
+.faq-card .accordion-button:not(.collapsed) {
+    color: var(--gflex-blue-dark);
+    background: #fff;
+}
+
+.faq-card .accordion-body {
+    font-size: .92rem;
+    color: #526879;
+    padding: 0 1rem 1rem;
+}
+
+.advantages h2 {
+    font-size: clamp(2.1rem, 5vw, 3rem);
+    color: var(--gflex-yellow);
+}
+
+.advantage-item {
+    display: flex;
+    gap: .7rem;
+    align-items: flex-start;
+    color: #d7e7f1;
+    font-size: .96rem;
+}
+
+.advantage-item i {
+    color: var(--gflex-yellow);
+    margin-top: .15rem;
+}
+
+.map-strip {
+    display: block;
+    margin: 35px;
+}
+
+.map-strip a {
+    display: block;
+    background-color: var(--gflex-yellow);
+    text-align: center;
+    width: 100%;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+    margin-top: -8px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--gflex-text);
+}
+
+.map-strip iframe {
+    width: 100%;
+    height: 240px;
+    border: 0;
+    filter: saturate(.95);
+}
+
+.footer-logo {
+    max-width: 160px;
+}
+
+.footer-title {
+    color: #fff;
+    font-family: "Montserrat", Georgia, 'Times New Roman', serif;
+    font-weight: 800;
+    display: inline-block;
+    border-bottom: 3px solid var(--gflex-yellow);
+    padding-bottom: .35rem;
+    margin-bottom: 1rem;
+}
+
+.footer-link {
+    color: #d6e7f1;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--gflex-yellow);
+}
+
+.product-card {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.product-card figure {
+    margin: 0;
+    padding: 20px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0d2c54;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0d2c54;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.product-card ul {
+    font-size: 13px;
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background: #0d2c54;
+    border-radius: 50%;
+    top: 40%;
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    left: -20px;
+}
+
+.carousel-control-next {
+    right: -20px;
+}
+
+.gflex-faq .faq-card {
+    border: 1.5px solid #8bb9e8;
+    border-radius: 14px;
+    background: #f8fafc;
+    padding: 1.2rem;
+    height: 100%;
+    transition: all .25s ease;
+}
+
+.gflex-faq h3 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--gflex-blue);
+    margin-bottom: .6rem;
+    position: relative;
+}
+
+.gflex-faq h3::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: var(--gflex-yellow);
+    margin-top: 8px;
+}
+
+.gflex-faq p {
+    font-size: .9rem;
+    color: #5f6f7c;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.gflex-faq .faq-card:hover {
+    transform: translateY(-4px);
+    border-color: #5aa2e6;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero {
+        min-height: clamp(340px, 52vw, 520px);
+    }
+
+    .section-title {
+        font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+    }
+
+    .brand-logo {
+        height: 50px;
+        max-width: 130px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero {
+        min-height: 380px;
+        background-position: center top;
+    }
+
+    .hero-actions {
+        width: calc(100% - 1.25rem);
+        bottom: 1rem;
+    }
+
+    .whatsapp-float {
+        font-size: .8rem;
+        padding: .7rem .8rem !important;
+    }
+
+    .social-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .intro-card {
+        border-radius: 0 0 38% 38% / 0 0 3% 3%;
+    }
+
+    .brand-logo {
+        height: 40px;
+        max-width: 100px;
+    }
+
+    .product-card figure {
+        min-height: 185px;
+    }
+
+    .product-card img {
+        max-height: 178px;
+    }
+
+    .advantages h2 {
+        font-size: clamp(1.8rem, 7vw, 2.4rem);
+    }
+
+    .footer-logo {
+        max-width: 120px;
+    }
 }
