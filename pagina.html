@@ -38,8 +38,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 
-    
 
     <script type="application/ld+json">
         {
@@ -184,150 +184,141 @@
         <section class="py-4 py-md-5" aria-labelledby="produtos-titulo">
             <div class="container">
                 <h2 id="produtos-titulo" class="text-center mb-4 section-title">Colchões mais vendidos</h2>
-                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"
-                    data-bs-pause="false" data-bs-wrap="true" data-bs-touch="true">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row g-3 g-lg-4">
-                                <article class="col-12 col-sm-6 col-lg-4">
-                                    <div class="card product-card">
-                                        <figure>
-                                            <img src="./assets/produto/produto-1.png"
-                                                alt="Colchão Plumatex San Diego com molas ensacadas e pillow top"
-                                                loading="lazy">
-                                        </figure>
-                                        <div class="card-body p-3 p-lg-4">
-                                            <h3>Colchão Plumatex San Diego</h3>
-                                            <ul class="ps-3 mb-0">
-                                                <li>Molas ensacadas individualmente para menos transferência de
-                                                    movimento.</li>
-                                                <li>Marca internacional com certificações.</li>
-                                                <li>Camada extra com conforto Pillow Top.</li>
-                                                <li>Espuma D28 de alta qualidade, proporcionando maciez com firmeza.
-                                                </li>
-                                                <li>Tratamento antiácaro e antifungo.</li>
-                                                <li>Tecnologia americana de Colchão.</li>
-                                                <li>Estrutura reforçada Polyframe.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="col-12 col-sm-6 col-lg-4">
-                                    <div class="card product-card">
-                                        <figure>
-                                            <img src="./assets/produto/produto-3.png"
-                                                alt="Colchão Plumatex State Gel com conforto térmico" loading="lazy">
-                                        </figure>
-                                        <div class="card-body p-3 p-lg-4">
-                                            <h3>Colchão Plumatex State Gel</h3>
-                                            <ul class="ps-3 mb-0">
-                                                <li>Molas ensacadas individualmente: mais suporte e conforto.</li>
-                                                <li>Presença de Comfort Gel: tecnologia térmica, proporcionando frescor
-                                                    ao colchão.</li>
-                                                <li>Camada extra para conforto Pillow Top.</li>
-                                                <li>Tecido em malha premium de alta gramatura.</li>
-                                                <li>Estrutura com múltiplas camadas de espuma para melhor adaptação ao
-                                                    corpo.</li>
-                                                <li>Altura elevada de 32 cm, para maior imponência e conforto.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="col-12 col-sm-6 col-lg-4">
-                                    <div class="card product-card">
-                                        <figure>
-                                            <img src="./assets/produto/produto-2.png"
-                                                alt="Colchão Plumatex York de espuma firme" loading="lazy">
-                                        </figure>
-                                        <div class="card-body p-3 p-lg-4">
-                                            <h3>Colchão Plumatex York</h3>
-                                            <ul class="ps-3 mb-0">
-                                                <li>Colchão de espuma com firmeza superior.</li>
-                                                <li>Espuma produzida em alta qualidade e alta densidade D45.</li>
-                                                <li>Maior durabilidade em comparação com espumas convencionais.</li>
-                                                <li>Produzido com controle de qualidade e certificação.</li>
-                                                <li>Mais sustentação da coluna.</li>
-                                                <li>Ideal para quem sente dores nas costas.</li>
-                                                <li>Melhor distribuição do peso corporal.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </article>
+
+                <div class="swiper product-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide">
+                            <div class="card product-card">
+                                <figure>
+                                    <img src="./assets/produto/produto-1.png"
+                                        alt="Colchão Plumatex San Diego com molas ensacadas e pillow top"
+                                        loading="lazy">
+                                </figure>
+                                <div class="card-body p-3 p-lg-4">
+                                    <h3>Colchão Plumatex San Diego</h3>
+                                    <ul class="ps-3 mb-0">
+                                        <li>Molas ensacadas individualmente para menos transferência de movimento.</li>
+                                        <li>Marca internacional com certificações.</li>
+                                        <li>Camada extra com conforto Pillow Top.</li>
+                                        <li>Espuma D28 de alta qualidade, proporcionando maciez com firmeza.</li>
+                                        <li>Tratamento antiácaro e antifungo.</li>
+                                        <li>Tecnologia americana de Colchão.</li>
+                                        <li>Estrutura reforçada Polyframe.</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row g-3 g-lg-4 justify-content-center">
-                                <article class="col-12 col-sm-6 col-lg-4">
-                                    <div class="card product-card">
-                                        <figure>
-                                            <img src="./assets/produto/produto-4.png"
-                                                alt="Colchão Plumatex The Best com conforto equilibrado" loading="lazy">
-                                        </figure>
-                                        <div class="card-body p-3 p-lg-4">
-                                            <h3>Colchão Plumatex The Best</h3>
-                                            <ul class="ps-3 mb-0">
-                                                <li>Altura de 30 cm, com visual elegante.</li>
-                                                <li>Estrutura com espumas de diferentes densidades.</li>
-                                                <li>Conforto equilibrado, sem ser rígido ou macio demais.</li>
-                                                <li>Ideal para casais com diferentes pesos.</li>
-                                                <li>Tecido em malha premium com toque macio.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="col-12 col-sm-6 col-lg-4">
-                                    <div class="card product-card">
-                                        <figure>
-                                            <img src="./assets/produto/produto-3.png"
-                                                alt="Colchão Plumatex State Gel com conforto térmico" loading="lazy">
-                                        </figure>
-                                        <div class="card-body p-3 p-lg-4">
-                                            <h3>Colchão Plumatex State Gel</h3>
-                                            <ul class="ps-3 mb-0">
-                                                <li>Molas ensacadas individualmente: mais suporte e conforto.</li>
-                                                <li>Presença de Comfort Gel: tecnologia térmica, proporcionando frescor
-                                                    ao colchão.</li>
-                                                <li>Camada extra para conforto Pillow Top.</li>
-                                                <li>Tecido em malha premium de alta gramatura.</li>
-                                                <li>Estrutura com múltiplas camadas de espuma para melhor adaptação ao
-                                                    corpo.</li>
-                                                <li>Altura elevada de 32 cm, para maior imponência e conforto.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="col-12 col-sm-6 col-lg-4">
-                                    <div class="card product-card">
-                                        <figure>
-                                            <img src="./assets/produto/produto-2.png"
-                                                alt="Colchão Plumatex York de espuma firme" loading="lazy">
-                                        </figure>
-                                        <div class="card-body p-3 p-lg-4">
-                                            <h3>Colchão Plumatex York</h3>
-                                            <ul class="ps-3 mb-0">
-                                                <li>Colchão de espuma com firmeza superior.</li>
-                                                <li>Espuma produzida em alta qualidade e alta densidade D45.</li>
-                                                <li>Maior durabilidade em comparação com espumas convencionais.</li>
-                                                <li>Produzido com controle de qualidade e certificação.</li>
-                                                <li>Mais sustentação da coluna.</li>
-                                                <li>Ideal para quem sente dores nas costas.</li>
-                                                <li>Melhor distribuição do peso corporal.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </article>
+                        </article>
+
+                        <article class="swiper-slide">
+                            <div class="card product-card">
+                                <figure>
+                                    <img src="./assets/produto/produto-3.png"
+                                        alt="Colchão Plumatex State Gel com conforto térmico" loading="lazy">
+                                </figure>
+                                <div class="card-body p-3 p-lg-4">
+                                    <h3>Colchão Plumatex State Gel</h3>
+                                    <ul class="ps-3 mb-0">
+                                        <li>Molas ensacadas individualmente: mais suporte e conforto.</li>
+                                        <li>Presença de Comfort Gel: tecnologia térmica, proporcionando frescor ao
+                                            colchão.</li>
+                                        <li>Camada extra para conforto Pillow Top.</li>
+                                        <li>Tecido em malha premium de alta gramatura.</li>
+                                        <li>Estrutura com múltiplas camadas de espuma para melhor adaptação ao corpo.
+                                        </li>
+                                        <li>Altura elevada de 32 cm, para maior imponência e conforto.</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+                        </article>
+
+                        <article class="swiper-slide">
+                            <div class="card product-card">
+                                <figure>
+                                    <img src="./assets/produto/produto-2.png"
+                                        alt="Colchão Plumatex York de espuma firme" loading="lazy">
+                                </figure>
+                                <div class="card-body p-3 p-lg-4">
+                                    <h3>Colchão Plumatex York</h3>
+                                    <ul class="ps-3 mb-0">
+                                        <li>Colchão de espuma com firmeza superior.</li>
+                                        <li>Espuma produzida em alta qualidade e alta densidade D45.</li>
+                                        <li>Maior durabilidade em comparação com espumas convencionais.</li>
+                                        <li>Produzido com controle de qualidade e certificação.</li>
+                                        <li>Mais sustentação da coluna.</li>
+                                        <li>Ideal para quem sente dores nas costas.</li>
+                                        <li>Melhor distribuição do peso corporal.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="swiper-slide">
+                            <div class="card product-card">
+                                <figure>
+                                    <img src="./assets/produto/produto-4.png"
+                                        alt="Colchão Plumatex The Best com conforto equilibrado" loading="lazy">
+                                </figure>
+                                <div class="card-body p-3 p-lg-4">
+                                    <h3>Colchão Plumatex The Best</h3>
+                                    <ul class="ps-3 mb-0">
+                                        <li>Altura de 30 cm, com visual elegante.</li>
+                                        <li>Estrutura com espumas de diferentes densidades.</li>
+                                        <li>Conforto equilibrado, sem ser rígido ou macio demais.</li>
+                                        <li>Ideal para casais com diferentes pesos.</li>
+                                        <li>Tecido em malha premium com toque macio.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="swiper-slide">
+                            <div class="card product-card">
+                                <figure>
+                                    <img src="./assets/produto/produto-3.png"
+                                        alt="Colchão Plumatex State Gel com conforto térmico" loading="lazy">
+                                </figure>
+                                <div class="card-body p-3 p-lg-4">
+                                    <h3>Colchão Plumatex State Gel</h3>
+                                    <ul class="ps-3 mb-0">
+                                        <li>Molas ensacadas individualmente: mais suporte e conforto.</li>
+                                        <li>Presença de Comfort Gel: tecnologia térmica, proporcionando frescor ao
+                                            colchão.</li>
+                                        <li>Camada extra para conforto Pillow Top.</li>
+                                        <li>Tecido em malha premium de alta gramatura.</li>
+                                        <li>Estrutura com múltiplas camadas de espuma para melhor adaptação ao corpo.
+                                        </li>
+                                        <li>Altura elevada de 32 cm, para maior imponência e conforto.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="swiper-slide">
+                            <div class="card product-card">
+                                <figure>
+                                    <img src="./assets/produto/produto-2.png"
+                                        alt="Colchão Plumatex York de espuma firme" loading="lazy">
+                                </figure>
+                                <div class="card-body p-3 p-lg-4">
+                                    <h3>Colchão Plumatex York</h3>
+                                    <ul class="ps-3 mb-0">
+                                        <li>Colchão de espuma com firmeza superior.</li>
+                                        <li>Espuma produzida em alta qualidade e alta densidade D45.</li>
+                                        <li>Maior durabilidade em comparação com espumas convencionais.</li>
+                                        <li>Produzido com controle de qualidade e certificação.</li>
+                                        <li>Mais sustentação da coluna.</li>
+                                        <li>Ideal para quem sente dores nas costas.</li>
+                                        <li>Melhor distribuição do peso corporal.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <button class="carousel-control-prev d-none d-md-flex" type="button"
-                        data-bs-target="#productCarousel" data-bs-slide="prev" aria-label="Produtos anteriores">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </button>
-                    <button class="carousel-control-next d-none d-md-flex" type="button"
-                        data-bs-target="#productCarousel" data-bs-slide="next" aria-label="Próximos produtos">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>
+
+                    <div class="swiper-button-prev" aria-label="Produtos anteriores"></div>
+                    <div class="swiper-button-next" aria-label="Próximos produtos"></div>
                 </div>
+
             </div>
         </section>
 
@@ -580,6 +571,27 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const productSwiper = new Swiper('.product-swiper', {
+            loop: true,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false
+            },
+            spaceBetween: 24,
+            slidesPerView: 3,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                992: { slidesPerView: 3 }
+            }
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
